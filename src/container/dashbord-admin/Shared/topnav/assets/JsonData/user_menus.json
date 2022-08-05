@@ -1,0 +1,14 @@
+[
+    {
+        "icon": "bx bx-user",
+        "content": "Profil"
+    },
+    {
+        "icon": "bx bx-cog",
+        "content": "Reglage"
+    },
+    {
+        "icon": "bx bx-log-out-circle bx-rotate-180",
+        "content": "Se déconnecter"
+    }
+]

@@ -1,0 +1,228 @@
+[
+	{
+		"id": 1,
+		"title": "Aspirine 500 mg",
+		"cat": "Category > Comprimes",
+		"projet":"Pharmacie ASSALAM",
+		"slug": "Aspirine 500 mg",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum",
+		"status": "open",
+		"price1": "223.00",
+		"price2": "99.00",
+		"rating": 3,
+		"ratingCount": 1,
+		"serieID": "1-114-147-7099",
+		"image": {
+			"id": 90096,
+			"url": "/IM1",
+			"thumb_url": "/IM1"
+		},
+		"category": {
+			"id": 1,
+			"lat": 40.706877,
+			"lng": -74.011265,
+			"formattedAddress": "52623 Donnie Roads",
+			"zipcode": "68225-1064",
+			"city": "Nestorview",
+			"state_long": "Washington",
+			"state_short": "WY",
+			"country_long": "Tanzania",
+			"country_short": "VN"
+		},
+		"gallery": [
+			{
+				"id": 11287,
+				"url": "/IM1"
+			},
+			{
+				"id": 51759,
+				"url": "/IM2"
+			},
+			{
+				"id": 1888,
+				"url": "/IM3"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"title": "Aspirine 500 mg",
+		"cat": "Category > Comprimes",
+		"projet":"Pharmacie ASSALAM",
+		"slug": "Aspirine 500 mg",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum",
+		"status": "open",
+		"price1": "223.00",
+		"price2": "99.00",
+		"rating": 3,
+		"ratingCount": 1,
+		"serieID": "1-114-147-7099",
+		"image": {
+			"id": 90096,
+			"url": "/IM1",
+			"thumb_url": "/IM1"
+		},
+		"category": {
+			"id": 1,
+			"lat": 40.706877,
+			"lng": -74.011265,
+			"formattedAddress": "52623 Donnie Roads",
+			"zipcode": "68225-1064",
+			"city": "Nestorview",
+			"state_long": "Washington",
+			"state_short": "WY",
+			"country_long": "Tanzania",
+			"country_short": "VN"
+		},
+		"gallery": [
+			{
+				"id": 11287,
+				"url": "/IM2"
+			},
+			{
+				"id": 51759,
+				"url": "/IM3"
+			},
+			{
+				"id": 1888,
+				"url": "/IM1"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"title": "Aspirine 500 mg",
+		"cat": "Category > Comprimes",
+		"projet":"Pharmacie ASSALAM",
+		"slug": "Aspirine 500 mg",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum",
+		"status": "open",
+		"price1": "223.00",
+		"price2": "99.00",
+		"rating": 3,
+		"ratingCount": 1,
+		"serieID": "1-114-147-7099",
+		"image": {
+			"id": 90096,
+			"url": "/IM1",
+			"thumb_url": "/IM1"
+		},
+		"category": {
+			"id": 1,
+			"lat": 40.706877,
+			"lng": -74.011265,
+			"formattedAddress": "52623 Donnie Roads",
+			"zipcode": "68225-1064",
+			"city": "Nestorview",
+			"state_long": "Washington",
+			"state_short": "WY",
+			"country_long": "Tanzania",
+			"country_short": "VN"
+		},
+		"gallery": [
+			{
+				"id": 11287,
+				"url": "/IM2"
+			},
+			{
+				"id": 51759,
+				"url": "/IM1"
+			},
+			{
+				"id": 1888,
+				"url": "/IM3"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"title": "Aspirine 500 mg",
+		"cat": "Category > Comprimes",
+		"slug": "Aspirine 500 mg",
+		"projet":"Pharmacie ASSALAM",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum",
+		"status": "close",
+		"price1": "223.00",
+		"price2": "99.00",
+		"rating": 3,
+		"ratingCount": 1,
+		"serieID": "1-114-147-7099",
+		"image": {
+			"id": 90096,
+			"url": "/IM1",
+			"thumb_url": "/IM1"
+		},
+		"category": {
+			"id": 1,
+			"lat": 40.706877,
+			"lng": -74.011265,
+			"formattedAddress": "52623 Donnie Roads",
+			"zipcode": "68225-1064",
+			"city": "Nestorview",
+			"state_long": "Washington",
+			"state_short": "WY",
+			"country_long": "Tanzania",
+			"country_short": "VN"
+		},
+		"gallery": [
+			{
+				"id": 11287,
+				"url": "/IM3"
+			},
+			{
+				"id": 51759,
+				"url": "/IM1"
+			},
+			{
+				"id": 1888,
+				"url": "/IM2"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"title": "Aspirine 500 mg",
+		"cat": "Category > Comprimes",
+		"slug": "Aspirine 500 mg",
+		"projet":"Pharmacie ASSALAM",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum",
+		"status": "open",
+		"price1": "223.00",
+		"price2": "99.00",
+		"rating": 3,
+		"ratingCount": 1,
+		"serieID": "1-114-147-7099",
+		"image": {
+			"id": 90096,
+			"url": "/IM1",
+			"thumb_url": "/IM1"
+		},
+		"category": {
+			"id": 1,
+			"lat": 40.706877,
+			"lng": -74.011265,
+			"formattedAddress": "52623 Donnie Roads",
+			"zipcode": "68225-1064",
+			"city": "Nestorview",
+			"state_long": "Washington",
+			"state_short": "WY",
+			"country_long": "Tanzania",
+			"country_short": "VN"
+		},
+		"gallery": [
+			{
+				"id": 11287,
+				"url": "/IM3"
+			},
+			{
+				"id": 51759,
+				"url": "/IM1"
+			},
+			{
+				"id": 1888,
+				"url": "/IM2"
+			}
+		]
+	}
+
+]

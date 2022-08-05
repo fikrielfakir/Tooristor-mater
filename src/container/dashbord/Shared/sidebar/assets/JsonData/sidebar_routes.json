@@ -1,0 +1,30 @@
+[
+    { 
+        "display_name": "Overview",
+        "route": "/admin-owner",
+        "head": "Overview",
+        "icon": "icon-Vector-21",
+        "value":"1"
+    },
+    {
+        "display_name": "Products",
+        "route": "/admin-owner/products",
+        "head": "Products",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    },
+    {
+        "display_name": "Messages",
+        "route": "/admin-owner/messages",
+        "head": "Messages",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    },
+    {
+        "display_name": "Settings",
+        "route": "/admin-owner/settings",
+        "head": "Products",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    }
+]

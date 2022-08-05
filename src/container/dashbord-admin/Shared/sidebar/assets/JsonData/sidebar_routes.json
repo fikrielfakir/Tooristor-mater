@@ -1,0 +1,44 @@
+[
+    { 
+        "display_name": "Overview",
+        "route": "/admin",
+        "head": "Overview",
+        "icon": "icon-Vector-21",
+        "value":"1"
+    },
+    {
+        "display_name": "Projects",
+        "route": "/admin/projects",
+        "head": "Projcts",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    },
+    {
+        "display_name": "Products",
+        "route": "/admin/products",
+        "head": "Products",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    },
+    {
+        "display_name": "Category",
+        "route": "/admin/category",
+        "head": "Category",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    },
+    {
+        "display_name": "Messages",
+        "route": "/admin/messages",
+        "head": "Messages",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    },
+    {
+        "display_name": "Settings",
+        "route": "/admin/settings",
+        "head": "Settings",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    }
+]
