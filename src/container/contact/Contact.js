@@ -1,10 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Divider } from 'antd';
-import Logo from 'components/UI/Logo/Logo';
-import { LOGIN_PAGE } from 'settings/constantClient';
 import ContactForm from './ContactForm.js';
-import Wrapper, {
+import {
   Title2,
   TitleInfo2,
   Text2,

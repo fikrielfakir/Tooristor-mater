@@ -1,6 +1,6 @@
 import React from 'react';
-import { GET_PRODUCT_DETAILS } from '../../../components/GraphQL/Queries'
-import { useQuery, gql } from '@apollo/client';
+import { GET_PRODUCT} from '../../../components/GraphQL/products.graphql'
+import { useQuery} from '@apollo/client';
 import Carousel from 'react-bootstrap/Carousel';
 import "./item.css"
 
@@ -10,7 +10,7 @@ const DogPhoto = (props) => {
   const { id_product } = props.match.params
   console.log("props", props, " Country Id = ", id_product);
 
-  const { loading, error, data } = useQuery(GET_PRODUCT_DETAILS, {
+  const { loading, error, data } = useQuery(GET_PRODUCT, {
     variables: { id_product },
   });
 

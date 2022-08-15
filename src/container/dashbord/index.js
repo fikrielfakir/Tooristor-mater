@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 
 import Sidebar from './Shared/sidebar/Sidebar'
 import TopNav from './Shared/topnav/TopNav'

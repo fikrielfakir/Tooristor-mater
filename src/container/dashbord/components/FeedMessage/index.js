@@ -1,9 +1,8 @@
 import React from 'react'
-import ItemView from '../UI DASHBORD/ItemView'
 
 
 
-const FeedMessage = props => {
+const FeedMessage = () => {
     
     return (
         <div className="FeedMessage">

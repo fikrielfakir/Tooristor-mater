@@ -1,8 +1,7 @@
 import * as React from 'react';
-import Citys from './ma.json'
 
 
-function projet(props) {
+function projet() {
   return (
     <>
    <select className="col-sm">

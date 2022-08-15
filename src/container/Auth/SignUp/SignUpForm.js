@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Redirect  } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 import { MdLockOpen } from 'react-icons/md';
 import { Input, Switch, Button } from 'antd';
@@ -18,7 +18,7 @@ const SignUpForm = () => {
     signUp(data);
   };
   if (loggedIn) {
-    return <Redirect  to={{ pathname: '/' }} />;
+    return <Redirect to={{ pathname: '/' }} />;
   }
 
   return (

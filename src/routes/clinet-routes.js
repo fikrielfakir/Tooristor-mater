@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Route, Redirect , Switch } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import { AuthContext } from '../context/AuthProvider';
 import Layout from '../container/Layout/Layout';
@@ -194,7 +194,7 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route
       render={(props) =>
-        loggedIn ? <Component {...props} /> : <Redirect  to={LOGIN_PAGE} />
+        loggedIn ? <Component {...props} /> : <Redirect to={LOGIN_PAGE} />
       }
       {...rest}
     />

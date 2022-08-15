@@ -41,10 +41,7 @@ const Topnav = () => {
         <div className='container-fluid d-flex align-items-stretch justify-content-start'>
             <div className="topnav__search">
                 <input type="text" placeholder='Search here...' />
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.75 11C2.75 6.44365 6.44365 2.75 11 2.75C15.5563 2.75 19.25 6.44365 19.25 11C19.25 15.5563 15.5563 19.25 11 19.25C6.44365 19.25 2.75 15.5563 2.75 11Z" stroke="#353B48" stroke-opacity="0.2" stroke-width="1.5"/>
-<path d="M18.75 20C18.75 19.3096 19.3096 18.75 20 18.75C20.6904 18.75 21.25 19.3096 21.25 20C21.25 20.6904 20.6904 21.25 20 21.25C19.3096 21.25 18.75 20.6904 18.75 20Z" stroke="#353B48" stroke-opacity="0.2" stroke-width="1.5"/>
-</svg>
+  
 
             </div>
             <div className="topnav__right">

@@ -1,7 +1,7 @@
 import React from 'react';
 import FiltreBare from './FiltreBare';
 import Card from './Products/card';
-import {GET_PRODUCTS} from '../../components/GraphQL/Queries'
+import {GET_PRODUCTS} from '../../components/GraphQL/products.graphql'
 import { useQuery} from '@apollo/client';
 import ListingWrapper from './Listing.style';
 

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import { AuthContext } from './context/AuthProvider';
 import Layout from './container/Layout/Layout';
-import { useAuth } from 'context/auth'
+
 import {
   LOGIN_PAGE,
   REGISTRATION_PAGE,
@@ -80,29 +79,6 @@ const routes = [
         ),
       loading: Loading,
       modules: ['ForgetPassword'],
-    }),
-  },
- 
-  {
-    path: DASHBORD_ADMIN,
-    component: Loadable({
-      loader: () =>
-        import(
-          /* webpackChunkName: "ForgetPassword" */ './container/dashbord-admin'
-        ),
-      loading: Loading,
-      modules: ['DASHBORD_ADMIN'],
-    }),
-  },
-  {
-    path: HOME_OWNER,
-    component: Loadable({
-      loader: () =>
-        import(
-          /* webpackChunkName: "ForgetPassword" */ './container/dashbord'
-        ),
-      loading: Loading,
-      modules: ['HOME_OWNER'],
     }),
   },
   {
@@ -184,6 +160,14 @@ const Adminowner = Loadable({
   loading: Loading,
   modules: ['Adminowner'],
 });
+const Admin = Loadable({
+  loader: () =>
+    import(
+      /* webpackChunkName: "AgentAccountSettingsPage" */ './container/dashbord-admin'
+    ),
+  loading: Loading,
+  modules: ['Admin'],
+});
 
 /**
  *
@@ -198,15 +182,17 @@ const NotFound = Loadable({
   modules: ['NotFound'],
 });
 
-const ProtectedRoute = ({ component: Component, ...rest }) => {
-  const { isSignedIn } = useAuth()
+const PrivateRoute = ({component: Component, ...rest}) => {
+  const token = localStorage.getItem('id_token')
   return (
-    <Route
-      render={(props) =>
-        isSignedIn ? <Component {...props} /> : <Redirect to={LOGIN_PAGE} />
-      }
-      {...rest}
-    />
+
+      // Show the component only when the user is logged in
+      // Otherwise, redirect the user to /signin page
+      <Route {...rest} render={props => (
+        token ?
+              <Component {...props} />
+          : <Redirect to="/sign-in" />
+      )} />
   );
 };
 
@@ -219,9 +205,17 @@ const Routes = () => {
           <Route key={path} path={path} exact={exact} component={component} />
         ))}
        
-        <ProtectedRoute
+        <PrivateRoute
           path={AGENT_ACCOUNT_SETTINGS_PAGE}
           component={AgentAccountSettingsPage}
+        />
+        <PrivateRoute
+          path={HOME_OWNER}
+          component={Adminowner}
+        />
+        <PrivateRoute
+          path={DASHBORD_ADMIN}
+          component={Admin}
         />
         <Route component={NotFound} />
       </Switch>

@@ -1,7 +1,4 @@
 import React from "react"
-import Card from "../components/UI DASHBORD/Card"
-import ListMessages from "../components/ListMessages"
-import ListProducts from "../components/ListProducts"
 
 const Settings = () => {
     return (

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Redirect  } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { Row, Col, Button } from 'antd';
 import { AuthContext } from 'context/AuthProvider';
 
@@ -25,7 +25,7 @@ const SocialLogin = () => {
     }, 600);
   };
   if (loggedIn) {
-    return <Redirect  to={{ pathname: '/' }} />;
+    return <Redirect to={{ pathname: '/' }} />;
   }
 
   return (

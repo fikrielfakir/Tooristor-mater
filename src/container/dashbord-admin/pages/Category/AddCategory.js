@@ -1,34 +1,48 @@
-import React from "react"
-import Card from "../../components/UI DASHBORD/Card"
-import ListMessages from "../../components/ListMessages"
-import ListProducts from "../../components/ListProducts"
+import React, { useState } from "react";
+import { CREATE_TYPE } from "../../../../components/GraphQL/Mutations";
 
-const Settings = () => {
-    return (
-        <div className="content fs-6 d-flex flex-column flex-column-fluid">
-            <div className="toolbar">
-                <div className="container-fluid d-flex flex-stack flex-wrap flex-sm-nowrap">
-                    <div className="d-flex flex-column align-items-start justify-content-center flex-wrap me-2"><div className="text-dark fw-bolder my-1 fs-2">General Settings</div></div>
-                    <div className="d-flex align-items-center flex-nowrap text-nowrap py-1"></div>
-                </div>
-                <div className="ProfileSetting">
-                    <div className="AvatarSetting"><img src="/images/profile.png"/></div>
-                    <div className="NameSetting">Pharmacy Errahma</div>
-                    <div className="inputSetting">
-                        <input className="InSetting w100" placeholder="Project name"/>
-                        <div className="Inputflex">
-                            <input className="InSetting w50" placeholder="First name"/>
-                            <input className="InSetting w50" placeholder="Last name"/>
-                        </div>
-                        <input className="InSetting w100" placeholder="Email address"/>
-                        <input className="InSetting w100" placeholder="Phone number"/>
-                        <input className="InSetting w100" value="R83984"/>
-                    </div>
-                    <div className="validationbutton"><button className="sumbit send">Send</button><button  className="sumbit cancel">Cancel</button></div>
-                </div>
-            </div>
-        </div>
-    )
+import { useMutation ,gql} from "@apollo/client";
+
+
+function AddProduct() {
+  const [CreateType, { data, loading, error }] = useMutation(CREATE_TYPE);
+  const [newForm, setNewForm] = useState({ name: '' });
+
+  if (loading) return 'Submitting...';
+  if (error) return `Submission error! ${error.message}`;
+  if (data) return console.log(data);
+  //function for handle updates on the create product form
+  const formUpdate = (event) => {
+    setNewForm({...newForm, [event.target.name]: event.target.value})
+  }
+
+
+
+  // creates a new product and adds it to the selected category
+  const handleCreateType = async () => {
+    try{
+      const CreateTypeMutation = await CreateType ({
+        variables:{
+         "input": { name: newForm.name}  }
+      })
+      return CreateTypeMutation;
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  return (
+    <div>
+          {loading ? ( <div>Loading...</div> ) : (
+        <form className="input-field" onSubmit={handleCreateType}> 
+            <input  className="input-name" type="text" value={newForm.name} onChange={formUpdate} name="name" placeholder="name"/>
+            <button type="submit">Create</button>
+        </form>)}
+    
+      {/* Spreadsheet Labels */}
+     
+    </div>
+  );
 }
 
-export default Settings
+export default AddProduct;

@@ -10,6 +10,7 @@ import AuthProvider from 'context/AuthProvider';
 import Routes from './router';
 import "../src/Assets/Styles/fonts/stylesheet.css"
 import "../src/Assets/Styles/icons/style.css"
+import "../src/Assets/Styles/FA5PRO-master/css/all.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./main.css"
 
