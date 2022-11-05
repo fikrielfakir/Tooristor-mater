@@ -24,6 +24,7 @@
   }
   
   .no-suggestions {
+    margin-top: 10px;
     color: #999;
     padding: 0.4rem;
     font-size: 0.9rem;

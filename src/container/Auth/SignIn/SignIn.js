@@ -11,7 +11,7 @@ import Wrapper, {
 
 const SignIn = () => {
   return (
-      <div className="ant-layout-content">
+      <div className="bodyFrom">
       <div className="logoWrapper">
          <Logo
           withLink

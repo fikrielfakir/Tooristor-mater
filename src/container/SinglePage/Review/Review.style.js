@@ -126,7 +126,7 @@ const ReviewWrapper = styled.div`
             }
           }
           svg {
-            fill: ${themeGet('primary.0', '#008489')};
+            fill: ${themeGet('primary.0', '#EE5A24')};
           }
         }
       }
@@ -156,8 +156,8 @@ export const FilterElement = styled.div`
       }
       &.ant-checkbox-checked {
         .ant-checkbox-inner {
-          border-color: ${themeGet('primary.0', '#008489')};
-          background-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
+          background-color: ${themeGet('primary.0', '#EE5A24')};
         }
       }
       &::after {
@@ -178,7 +178,7 @@ export const RatingWrapper = styled.span`
   display: inline-flex;
   align-items: center;
   flex: 1;
-  color: ${themeGet('primary.0', '#008489')};
+  color: ${themeGet('primary.0', '#EE5A24')};
 `;
 
 export const HeaderSection = styled.div`
@@ -203,14 +203,14 @@ export const RatingStatus = styled.div`
   }
   i {
     font-size: 18px;
-    color: ${themeGet('primary.0', '#008489')};
+    color: ${themeGet('primary.0', '#EE5A24')};
     position: relative;
     top: 1px;
   }
   svg {
     width: 21px;
     height: 21px;
-    fill: ${themeGet('primary.0', '#008489')};
+    fill: ${themeGet('primary.0', '#EE5A24')};
     margin-right: 2px;
     position: relative;
     top: 1px;
@@ -254,8 +254,8 @@ export const RatingSearch = styled.div`
       &.ant-btn-primary {
         height: 37px;
         min-width: 133px;
-        border-color: ${themeGet('primary.0', '#008489')};
-        background-color: ${themeGet('primary.0', '#008489')};
+        border-color: ${themeGet('primary.0', '#EE5A24')};
+        background-color: ${themeGet('primary.0', '#EE5A24')};
         text-shadow: none;
         font-size: 15px;
         font-weight: 700;
@@ -269,7 +269,7 @@ export const RatingSearch = styled.div`
 export const TextButton = styled.button`
   border: 0;
   background-color: transparent;
-  color: ${themeGet('primary.0', '#008489')};
+  color: ${themeGet('primary.0', '#EE5A24')};
   font-size: 13px;
   line-height: 16px;
   font-weight: 700;
@@ -281,7 +281,7 @@ export const TextButton = styled.button`
     width: 15px;
     height: 15px;
     margin-left: 4px;
-    fill: ${themeGet('primary.0', '#008489')};
+    fill: ${themeGet('primary.0', '#EE5A24')};
     position: relative;
     top: 1px;
   }
@@ -370,7 +370,7 @@ export const Form = styled.form`
         border-color: ${themeGet('border.3', '#E6E6E6')};
         background-color: ${themeGet('color.1', '#ffffff')};
         &:hover {
-          border-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
         }
         .ant-upload-drag-icon {
           font-size: 48px;
@@ -401,7 +401,7 @@ export const Form = styled.form`
         &.ant-upload-list-item-done {
           .ant-upload-list-item-info {
             a {
-              color: ${themeGet('primary.0', '#008489')};
+              color: ${themeGet('primary.0', '#EE5A24')};
             }
           }
         }

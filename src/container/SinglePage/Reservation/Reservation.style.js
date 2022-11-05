@@ -166,8 +166,8 @@ export const FormActionArea = styled.div`
     color: ${themeGet('color.1', '#ffffff')};
     font-size: 15px;
     font-weight: 700;
-    border-color: ${themeGet('primary.0', '#008489')};
-    background-color: ${themeGet('primary.0', '#008489')};
+    border-color: ${themeGet('primary.0', '#EE5A24')};
+    background-color: ${themeGet('primary.0', '#EE5A24')};
     transition: all 0.2s ease;
     &:hover,
     &:focus {

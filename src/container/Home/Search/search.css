@@ -57,9 +57,9 @@
   
   .suggestions li {
     padding: 0.5rem;
-    font-size: 10px;
+    font-size: 12px;
     color: #353b4878;
-    font-weight: 500;
+    font-weight: 700;
   }
   
   .suggestion-active{
@@ -71,4 +71,3 @@
   .suggestions li:not(:last-of-type) {
     border-bottom: none;
   }
-  

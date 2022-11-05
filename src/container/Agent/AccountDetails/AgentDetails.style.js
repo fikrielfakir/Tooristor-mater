@@ -159,7 +159,7 @@ export const NavigationArea = styled.div`
     font-size: 15px;
     text-transform: capitalize;
     color: ${themeGet('color.1', '#ffffff')};
-    background-color: ${themeGet('primary.0', '#008489')};
+    background-color: ${themeGet('primary.0', '#EE5A24')};
     transition: all 0.3s ease;
 
     @media (max-width: 480px) {
@@ -236,7 +236,7 @@ export const NavigationArea = styled.div`
           bottom: 0;
           opacity: 0;
           visibility: hidden;
-          background-color: ${themeGet('primary.0', '#008489')};
+          background-color: ${themeGet('primary.0', '#EE5A24')};
           transition: all 0.3s ease;
         }
 

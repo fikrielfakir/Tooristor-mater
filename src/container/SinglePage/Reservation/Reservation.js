@@ -56,6 +56,6 @@ CardHeader.defaultProps = {
   linkStyle: {
     fontSize: '15px',
     fontWeight: '700',
-    color: '#008489',
+    color: '#EE5A24',
   },
 };

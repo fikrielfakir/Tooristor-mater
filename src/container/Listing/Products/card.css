@@ -12,25 +12,28 @@
     background-color: rgb(255 255 255);
 }
 .thumble-img{
-    height: max-content;
+    height: 100%;
     width: 100%;
     max-width: 100%;
+    min-height: 100px;
     max-height: 105px;
     transition: opacity 250ms ease 0s;
-    object-fit: cover;
+    object-fit: scale-down;
     opacity: 1;
 }
 img {
     display: block;
     width: 100%;
 }
-.cardBTN{
-    border: none;
-    font-size: 9px;
+
+.cardBTN {
+    font-size: 11px;
     width: 100%;
+    border-color: transparent;
     border-radius: 5px;
-    padding: 5px;
-    font-weight: 500;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
     margin-top: 4px;
     color: #fff;
 }
@@ -44,13 +47,32 @@ img {
     border: none;
     background: #ffffff;
     border-radius: 15px;
-    max-height: 285px;
-    max-width: 188px;
+    max-height: 339px;
+    min-height: 295px;
+    max-width: 220px;
+    min-width: 220px;
+    width: -webkit-max-content;
     width: max-content;
+    height: -webkit-max-content;
     height: max-content;
 }
 .card-grid{
-    padding: 10px
+    padding: 14px
+}
+#combo-box-demo{
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    opacity: 0.7;
+}
+#demo-simple-select-label{
+ font-weight: 500;
+font-size: 13px;   
+}
+.MuiMenuItem-root{
+    font-size: 14px !important;
+}
+.MuiAutocomplete-option{
+    font-size: 14px !important;
 }
 .title-prix{
     display: flex;
@@ -59,17 +81,32 @@ img {
     gap: 20px;
     padding: 10px 0px;
 }
-.title{
+.card .cat{
     font-size: 12px;
+    font-weight: 600;
+}
+.title{
+    font-size: 13px;
     font-weight: 700;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     overflow: hidden;
     -webkit-box-orient: vertical;
 }
-.prix{
+.off{
+    position: absolute;
+    top: 15px;
+    font-weight: 700;
+    padding: 4px 4px;
+    border-radius: 7px;
+    color: #fff;
+    background: var(--primary);
     font-size: 12px;
+    z-index: 9999;
+}
+.prix{
+    font-size: 13px;
     align-items: center;
     color: var(--primary);
     font-weight: 700;
@@ -79,9 +116,16 @@ img {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    font-size: 8px;
-    color: rgba(53, 59, 72, 0.2);
+    max-height: 106px;
+    height: 100%;
+    min-height: 30px;
+    font-size: 10px;
+    color: rgb(53 59 72 / 70%);
     font-weight: 600;
+    margin: 2px 0px;
     overflow: hidden;
     -webkit-box-orient: vertical;
+}
+.cardBTN.clode,.cardBTN.open{
+    text-transform: uppercase;
 }

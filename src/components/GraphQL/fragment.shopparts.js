@@ -4,6 +4,10 @@ fragment ShopParts on Shop {
   id
   name
   slug
+  settings {
+      location {
+        city
+      }}
   owner_id
   owner {
     name
@@ -17,6 +21,7 @@ fragment ShopParts on Shop {
     email
   }
   description
+  status
   logo {
     id
     thumbnail
@@ -49,6 +54,36 @@ fragment ShopParts on Shop {
     state
     zip
   }
+  workhours {
+        monday {
+          From
+          To
+        }
+        tuesday {
+          From
+          To
+        }
+        wednesday {
+          From
+          To
+        }
+        thursday {
+          From
+          To
+        }
+        friday {
+          From
+          To
+        }
+        saturday {
+          From
+          To
+        }
+        sunday {
+          From
+          To
+        }
+      }
   created_at
 }
 `;

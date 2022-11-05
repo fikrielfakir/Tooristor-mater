@@ -1,0 +1,58 @@
+[
+    { 
+        "display_name": "Overview",
+        "route": "/admin",
+        "head": "Overview",
+        "icon": "fas fa-th-large",
+        "value":"1"
+    },
+    {
+        "display_name": "Projects",
+        "route": "/admin/projects",
+        "head": "Projcts",
+        "icon": "icon-Vector-21",
+        "value":"2"
+    },
+    {
+        "display_name": "Products",
+        "route": "/admin/products",
+        "head": "Products",
+        "icon": "far fa-box-usd",
+        "value":"2"
+    },
+    {
+        "display_name": "Category",
+        "route": "/admin/category",
+        "head": "Category",
+        "icon": "fad fa-puzzle-piece",
+        "value":"2"
+    },
+    {
+        "display_name": "Offres",
+        "route": "/admin/offres",
+        "head": "Category",
+        "icon": "fad fa-percentage",
+        "value":"2"
+    },
+    {
+        "display_name": "Tags",
+        "route": "/admin/tags",
+        "head": "Category",
+        "icon": "fad fa-tags",
+        "value":"2"
+    },
+    {
+        "display_name": "Messages",
+        "route": "/admin/messages",
+        "head": "Messages",
+        "icon": "fad fa-envelope",
+        "value":"2"
+    },
+    {
+        "display_name": "Settings",
+        "route": "/admin/settings",
+        "head": "Settings",
+        "icon": "fad fa-cog",
+        "value":"2"
+    }
+]

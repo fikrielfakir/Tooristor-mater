@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Aljazeera';
+  /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./Assets/Styles/fonts/Aljazeera-1.ttf");
+}
+
+body {
+  font-family: 'Aljazeera', sans-serif !important;
+}
+
+button {
+  font-family: 'Aljazeera'
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a li,
+p,
+span,
+div,
+button {
+  font-family: 'Aljazeera' !important;
+}
+
+.Searchbox {
+  margin-right: 0px !important;
+  max-width: 90% !important;
+}
+
+.dropdown {
+  margin-left: 20px;
+}
+
+.BreKu ul li:last-child a,
+.BreKu .ant-menu li:last-child a,
+.BreKu ul.ant-menu li:last-child a {
+  font-size: 14px !important;
+}
+
+.FiltreTool {
+  padding-right: 20px !important;
+}
+
+.Searchbox .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: "Aljazeera" !important;
+  transform-origin: top right !important;
+  right: 30px !important;
+  opacity: 0.7;
+}
+
+.Searchbox .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  right: 45px !important;
+  font-family: "Aljazeera" !important;
+  opacity: 0.7;
+  transform-origin: top right !important;
+}
+
+@media (min-width: 992px) {
+  .aside-fixed .aside.aside-default {
+    right: 0;
+  }
+
+  .aside-default-enabled.aside-fixed .wrapper {
+    transition: padding-left .3s ease;
+    padding-right: 350px;
+    padding-left: 0 !important;
+    margin-right: 20px;
+  }
+}
+
+tbody tr td:nth-child(1) {
+  border-left: none !important;
+  border-radius: 0px 10px 10px 0px !important;
+  border: 2px solid;
+}
+
+.aside-fixed .aside.aside-default {
+  border-left: 1px solid rgba(53, 59, 72, 0.2);
+}
+
+.sidebar__item-inner.active::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: var(--primary);
+  height: 50px;
+  border-radius: 8px 0px 0px 8px !important;
+  right: 0;
+}
+
+tbody tr td:nth-child(7) {
+  border-radius: 10px 0px 0px 10px !important;
+  border-right: 0 !important;
+}

@@ -60,8 +60,8 @@ export const FilterArea = styled.div`
     }
     &.active {
       color: ${themeGet('color.1', '#ffffff')};
-      border-color: ${themeGet('primary.0', '#008489')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      border-color: ${themeGet('primary.0', '#EE5A24')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
     }
   }
 `;
@@ -156,8 +156,8 @@ export const FilterElementsWrapper = styled.div`
               }
               &.ant-checkbox-checked {
                 .ant-checkbox-inner {
-                  border-color: ${themeGet('primary.0', '#008489')};
-                  background-color: ${themeGet('primary.0', '#008489')};
+                  border-color: ${themeGet('primary.0', '#EE5A24')};
+                  background-color: ${themeGet('primary.0', '#EE5A24')};
                 }
                 &::after {
                   display: none;
@@ -171,7 +171,7 @@ export const FilterElementsWrapper = styled.div`
             &:hover {
               .ant-checkbox {
                 .ant-checkbox-inner {
-                  border-color: ${themeGet('primary.0', '#008489')};
+                  border-color: ${themeGet('primary.0', '#EE5A24')};
                 }
               }
             }
@@ -195,7 +195,7 @@ export const FilterElementsWrapper = styled.div`
             background-color: ${themeGet('color.13', '#E2E2E2')};
           }
           .ant-slider-track {
-            background-color: ${themeGet('primary.0', '#008489')};
+            background-color: ${themeGet('primary.0', '#EE5A24')};
           }
           .ant-slider-step {
             .ant-slider-dot {
@@ -204,14 +204,14 @@ export const FilterElementsWrapper = styled.div`
           }
           &:hover {
             .ant-slider-track {
-              background-color: ${themeGet('primary.0', '#008489')};
+              background-color: ${themeGet('primary.0', '#EE5A24')};
             }
           }
           .ant-slider-handle {
             margin-top: -8px;
             width: 20px;
             height: 20px;
-            border: 6px solid ${themeGet('primary.0', '#008489')};
+            border: 6px solid ${themeGet('primary.0', '#EE5A24')};
             box-shadow: 0 2px 2px ${themeGet('color.5', 'rgba(0, 0, 0, 0.25)')};
             &:focus {
               box-shadow: none;
@@ -247,8 +247,8 @@ export const ButtonGroup = styled.div`
     border: 0;
     &.ant-btn-primary {
       color: ${themeGet('color.1', '#ffffff')};
-      border-color: ${themeGet('primary.0', '#008489')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      border-color: ${themeGet('primary.0', '#EE5A24')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
       margin-left: 10px;
     }
     &::after {

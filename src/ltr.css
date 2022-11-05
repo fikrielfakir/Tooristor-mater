@@ -1,0 +1,5 @@
+tbody tr td:nth-child(1) {
+    border: 2px solid;
+    border-right: none !important;
+    border-radius: 10px 0px 0px 10px;
+  }

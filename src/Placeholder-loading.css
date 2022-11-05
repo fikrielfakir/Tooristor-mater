@@ -1,0 +1,140 @@
+.header--isloading {
+  height: 45px;
+  display: flex;
+  border-radius: 4px;
+  gap: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  max-width: 164px;
+  align-items: center;
+}
+  
+  .loading {
+    background-image: linear-gradient(90deg, #ececec 0px, #f4f4f4 40px, #ececec 80px) !important;
+    background-size: 244px;
+    animation: shine-loading-image 2s infinite ease-out;
+    height: 12px;
+    color: transparent !important;
+  }
+  
+  .movie--isloading .loading-content {
+    background: #f7f7f7;
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .movie--isloading .loading-content .loading-text-container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  
+  .movie--isloading .loading-content .loading-main-text {
+    height: 10px;
+    width: 65%;
+    margin-bottom: 10px;
+    background: #ececec;
+    background-image: -webkit-linear-gradient(left, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-image: -o-linear-gradient(left, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-image: linear-gradient(90deg, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-size: 250px;
+    border-radius: 10px;
+    -webkit-animation: shine-loading-container-items 2s infinite ease-out;
+            animation: shine-loading-container-items 2s infinite ease-out;
+  }
+  
+  .movie--isloading .loading-content .loading-sub-text {
+    height: 10px;
+    width: 50%;
+    background: #ececec;
+    background-image: -webkit-linear-gradient(left, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-image: -o-linear-gradient(left, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-image: linear-gradient(90deg, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-size: 250px;
+    border-radius: 10px;
+    -webkit-animation: shine-loading-container-items 2s infinite ease-out;
+            animation: shine-loading-container-items 2s infinite ease-out;
+  }
+  
+  .movie--isloading .loading-content .loading-btn {
+    width: 60px;
+    height: 25px;
+    background: #ececec;
+    background-image: -webkit-linear-gradient(left, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-image: -o-linear-gradient(left, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-image: linear-gradient(90deg, #ececec 0px, #ddd 40px, #ececec 80px);
+    background-size: 250px;
+    border-radius: 3px;
+    -webkit-animation: shine-loading-container-items 2s infinite ease-out;
+            animation: shine-loading-container-items 2s infinite ease-out;
+  }
+  
+  
+  @-webkit-keyframes shine-loading-image {
+    0% {
+      background-position: -32px;
+    }
+    40%, 100% {
+      background-position: 208px;
+    }
+  }
+  
+  
+  @keyframes shine-loading-image {
+    0% {
+      background-position: -32px;
+    }
+    40%, 100% {
+      background-position: 208px;
+    }
+  }
+  
+  @-webkit-keyframes shine-loading-container-items {
+    0% {
+      background-position: -100px;
+    }
+    40%, 100% {
+      background-position: 140px;
+    }
+  }
+  
+  @keyframes shine-loading-container-items {
+    0% {
+      background-position: -100px;
+    }
+    40%, 100% {
+      background-position: 140px;
+    }
+  }
+  .placeholderprofile{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .placeholdertitle{
+    width: 80px;
+    height: 20px;
+    
+  }
+  .imgView.loading{
+    height: 50px;
+    border-radius: 10px;
+    width: 50px;
+  }
+  .titleView.loading{
+    height: 20px;
+    width: 150px;
+    border-radius: 5px;
+  }
+  .viewmore.loading{
+    border: 0 !important;
+  }

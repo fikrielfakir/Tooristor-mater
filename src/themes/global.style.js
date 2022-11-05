@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background: ${themeGet('primary.0', '#008489')};
+    background: ${themeGet('primary.0', '#EE5A24')};
     color: ${themeGet('color.1', '#ffffff')};
   }
 
@@ -147,11 +147,11 @@ const GlobalStyle = createGlobalStyle`
                   color: ${themeGet('text.0', '#2C2C2C')};
                   transition: color 0.2s ease-in-out;
                   &:hover {
-                    color: ${themeGet('primary.0', '#008489')};
+                    color: ${themeGet('primary.0', '#EE5A24')};
                   }
                   &.active {
                     font-weight: 700;
-                    color: ${themeGet('primary.0', '#008489')};
+                    color: ${themeGet('primary.0', '#EE5A24')};
                   }
                 }
                 button {
@@ -162,7 +162,7 @@ const GlobalStyle = createGlobalStyle`
                   background-color: transparent;
                   transition: color 0.2s ease-in-out;
                   &:hover {
-                    color: ${themeGet('primary.0', '#008489')};
+                    color: ${themeGet('primary.0', '#EE5A24')};
                   }
                   &:focus {
                     outline: none;
@@ -511,12 +511,12 @@ const GlobalStyle = createGlobalStyle`
 
   .quantity {
     button.btn {
-      border: 1px solid ${themeGet('primary.0', '#008489')};
+      border: 1px solid ${themeGet('primary.0', '#EE5A24')};
       svg {
-        fill: ${themeGet('primary.0', '#008489')};
+        fill: ${themeGet('primary.0', '#EE5A24')};
       }
       &:hover {
-        background-color: ${themeGet('primary.0', '#008489')};
+        background-color: ${themeGet('primary.0', '#EE5A24')};
         svg {
           fill: #ffffff;
         }
@@ -563,7 +563,7 @@ const GlobalStyle = createGlobalStyle`
           &:last-child {
             a {
               color: ${themeGet('color.1', '#ffffff')};
-              background-color: ${themeGet('primary.0', '#008489')};
+              background-color: ${themeGet('primary.0', '#EE5A24')};
               transition: opacity 0.2s ease;
               &:hover {
                 opacity: 0.9;
@@ -588,8 +588,8 @@ const GlobalStyle = createGlobalStyle`
             color: ${themeGet('text.0', '#2C2C2C')};
             &.active {
               font-weight: 700;
-              border-color: ${themeGet('primary.0', '#008489')};
-              color: ${themeGet('primary.0', '#008489')};
+              border-color: ${themeGet('primary.0', '#EE5A24')};
+              color: ${themeGet('primary.0', '#EE5A24')};
             }
           }
           button {
@@ -603,7 +603,7 @@ const GlobalStyle = createGlobalStyle`
             color: ${themeGet('text.0', '#2C2C2C')};
             transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             &:hover {
-              color: ${themeGet('primary.0', '#008489')};
+              color: ${themeGet('primary.0', '#EE5A24')};
             }
             &focus {
               outline: 0;
@@ -611,7 +611,7 @@ const GlobalStyle = createGlobalStyle`
           }
           &:hover {
             a {
-              color: ${themeGet('primary.0', '#008489')};
+              color: ${themeGet('primary.0', '#EE5A24')};
             }
           }
         }
@@ -742,12 +742,12 @@ const GlobalStyle = createGlobalStyle`
       font-size: 15px;
       font-weight: 400;
       a {
-        color: ${themeGet('primary.0', '#008489')};
+        color: ${themeGet('primary.0', '#EE5A24')};
         font-weight: 700;
         &:hover,
         &:focus {
           outline: 0;
-          color: #008489d1;
+          color: #EE5A24d1;
           text-decoration: underline;
         }
       }
@@ -784,7 +784,7 @@ const GlobalStyle = createGlobalStyle`
   .ant-checkbox:hover .ant-checkbox-inner, 
   .ant-checkbox-input:focus + .ant-checkbox-inner,
   .ant-checkbox-checked::after {
-    border-color: ${themeGet('primary.0', '#008489')} !important;
+    border-color: ${themeGet('primary.0', '#EE5A24')} !important;
   }
 
   .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {

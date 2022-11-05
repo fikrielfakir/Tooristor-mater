@@ -8,7 +8,8 @@ export const AGENTS_PAGE = '/agents';
 // Listing Single Page Section
 export const LISTING_POSTS_PAGE = '/listing';
 export const SINGLE_POST_PAGE = '/post';
-export const DETAIL_POSTS_PAGE = '/detail/:id_product';
+export const DETAIL_POSTS_PAGE = '/product/:id_product';
+export const DETAIL_POSTS_PAGE_SHOP = '/shop/:id_shop';
 
 // Agent Profile Page Section
 export const AGENT_PROFILE_PAGE = '/profile';
@@ -25,6 +26,7 @@ export const AGENT_PROFILE_CONTACT = '/contact';
 export const PRICING_PLAN_PAGE = '/pricing-plan';
 export const ABOUT_US = '/About-us';
 export const PRIVACY_PAGE = '/privacy';
+export const TERME_CONDITION = '/terme_conditions';
 export const ADD_HOTEL_PAGE = '/add-hotel';
 
 // Login / Registration Page
@@ -47,6 +49,8 @@ export const ADD_PROJECTS_ADMIN = '/admin/projects/add';
 export const PRODUCTS_ADMIN = '/admin/products';
 export const ADD_PRODUCTS_ADMIN = '/admin/products/add';
 export const CATEGORY_ADMIN = '/admin/category';
+export const OFFRES_ADMIN = '/admin/offres';
+export const TAGES_ADMIN = '/admin/tags';
 export const ADD_CATEGORY_ADMIN = '/admin/category';
 export const MESSAGES_ADMIN = '/admin/messages';
 export const SETTINGS_ADMIN = '/admin/settings';

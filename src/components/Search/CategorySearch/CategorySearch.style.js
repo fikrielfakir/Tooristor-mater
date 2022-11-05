@@ -33,8 +33,8 @@ const CategroySearchWrapper = styled.div`
         button,
         button.ant-btn {
           color: ${themeGet('color.1', '#ffffff')};
-          border-color: ${themeGet('primary.0', '#008489')};
-          background-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
+          background-color: ${themeGet('primary.0', '#EE5A24')};
         }
 
         & + .popup_container {
@@ -61,8 +61,8 @@ const CategroySearchWrapper = styled.div`
         button,
         button.ant-btn {
           color: ${themeGet('color.1', '#ffffff')};
-          border-color: ${themeGet('primary.0', '#008489')};
-          background-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
+          background-color: ${themeGet('primary.0', '#EE5A24')};
           &:hover {
             opacity: 0.85;
           }
@@ -84,8 +84,8 @@ const CategroySearchWrapper = styled.div`
               content: none;
             }
             &:hover {
-              color: ${themeGet('primary.0', '#008489')};
-              border-color: ${themeGet('primary.0', '#008489')};
+              color: ${themeGet('primary.0', '#EE5A24')};
+              border-color: ${themeGet('primary.0', '#EE5A24')};
             }
           }
         }
@@ -167,7 +167,7 @@ export const ActionWrapper = styled.div`
       float: right;
       border-color: transparent;
       background-color: transparent;
-      color: ${themeGet('primary.0', '#008489')};
+      color: ${themeGet('primary.0', '#EE5A24')};
       &:hover {
         color: ${themeGet('primary.1', '#399C9F')};
         border-bottom-color: ${themeGet('primary.1', '#399C9F')};

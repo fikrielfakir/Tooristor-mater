@@ -1,61 +1,44 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import LoaderWrapper from './Loader.style';
+import CircularProgress from '@mui/material/CircularProgress';
 
-const Loader = ({ fill, className }) => {
-  // default className
-  const addAllClasses = ['loader'];
-
-  // add new class using className prop
-  if (className) {
-    addAllClasses.push(className);
-  }
-
-  return (
-    <LoaderWrapper className={addAllClasses.join(' ')}>
-      <svg enableBackground="new 0 0 0 0">
-        <circle fill={fill} stroke="none" cx="6" cy="50" r="6">
-          <animate
-            attributeName="opacity"
-            dur="1s"
-            values="0;1;0"
-            repeatCount="indefinite"
-            begin="0.1"
-          />
+const LoaderPage = ()=>{
+    return(
+         
+<svg width="150" height="150" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#57b894">
+    <g fill="none" fill-rule="evenodd" stroke-width="2">
+        <circle cx="22" cy="22" r="1">
+            <animate attributeName="r"
+                begin="0s" dur="1.8s"
+                values="1; 20"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.165, 0.84, 0.44, 1"
+                repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                begin="0s" dur="1.8s"
+                values="1; 0"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.3, 0.61, 0.355, 1"
+                repeatCount="indefinite" />
         </circle>
-        <circle fill={fill} stroke="none" cx="26" cy="50" r="6">
-          <animate
-            attributeName="opacity"
-            dur="1s"
-            values="0;1;0"
-            repeatCount="indefinite"
-            begin="0.2"
-          />
+        <circle cx="22" cy="22" r="1">
+            <animate attributeName="r"
+                begin="-0.9s" dur="1.8s"
+                values="1; 20"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.165, 0.84, 0.44, 1"
+                repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                begin="-0.9s" dur="1.8s"
+                values="1; 0"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.3, 0.61, 0.355, 1"
+                repeatCount="indefinite" />
         </circle>
-        <circle fill={fill} stroke="none" cx="46" cy="50" r="6">
-          <animate
-            attributeName="opacity"
-            dur="1s"
-            values="0;1;0"
-            repeatCount="indefinite"
-            begin="0.3"
-          />
-        </circle>
-      </svg>
-    </LoaderWrapper>
-  );
-};
-
-Loader.propTypes = {
-  /** ClassName of the Loader component. */
-  className: PropTypes.string,
-
-  /** Add Loader color using fill prop. */
-  fill: PropTypes.string,
-};
-
-Loader.defaultProps = {
-  fill: '#008489',
-};
-
-export default Loader;
+    </g>
+</svg>
+    )
+}
+export default LoaderPage;

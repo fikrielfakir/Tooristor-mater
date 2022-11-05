@@ -5,13 +5,16 @@ import FooterWrapper, {
   CopyrightArea,
   SecondaryFooter,
 } from './Footer.style';
+import { useTranslation } from 'react-i18next';
 
 const Footer = ({ menu, copyright, className, path }) => {
+const {t} = useTranslation()
+const year = new Date().getFullYear()
   return (
     <>
       <FooterWrapper id="footer" className={className}>
         {menu && <MenuWrapper>{menu}</MenuWrapper>}
-        {copyright && <CopyrightArea>{copyright}</CopyrightArea>}
+        {copyright && <CopyrightArea>{t("reserved_by")} | {year}</CopyrightArea>}
       </FooterWrapper>
       {!!path && <SecondaryFooter />}
     </>

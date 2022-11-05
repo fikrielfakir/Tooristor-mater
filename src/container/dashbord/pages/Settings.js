@@ -2,7 +2,7 @@ import React from "react"
 
 const Settings = () => {
     return (
-        <div className="content fs-6 d-flex flex-column flex-column-fluid">
+        <div className="contentOverview">
             <div className="toolbar">
                 <div className="container-fluid d-flex flex-stack flex-wrap flex-sm-nowrap">
                     <div className="d-flex flex-column align-items-start justify-content-center flex-wrap me-2"><div className="text-dark fw-bolder my-1 fs-2">General Settings</div></div>

@@ -30,7 +30,7 @@ const Stepper = styled.div`
           height: 10px !important;
           border-top-left-radius: 0 !important;
           border-bottom-left-radius: 0 !important;
-          background-color: ${themeGet('primary.0', '#008489')};
+          background-color: ${themeGet('primary.0', '#EE5A24')};
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         }
       }
@@ -108,7 +108,7 @@ export const FormContent = styled.div`
         border-color: ${themeGet('border.3', '#E6E6E6')};
         background-color: ${themeGet('color.1', '#ffffff')};
         &:hover {
-          border-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
         }
         .ant-upload-drag-icon {
           font-size: 48px;
@@ -139,7 +139,7 @@ export const FormContent = styled.div`
         &.ant-upload-list-item-done {
           .ant-upload-list-item-info {
             a {
-              color: ${themeGet('primary.0', '#008489')};
+              color: ${themeGet('primary.0', '#EE5A24')};
             }
           }
         }
@@ -206,9 +206,9 @@ export const FormContent = styled.div`
             display: none;
           }
           .ant-radio-inner {
-            border-color: ${themeGet('primary.0', '#008489')};
+            border-color: ${themeGet('primary.0', '#EE5A24')};
             &::after {
-              background-color: ${themeGet('primary.0', '#008489')};
+              background-color: ${themeGet('primary.0', '#EE5A24')};
             }
           }
         }
@@ -248,7 +248,7 @@ export const FormAction = styled.div`
     border-radius: 3px;
     min-width: 95px;
     font-family: 'Montserrat', sans-serif;
-    background-color: ${themeGet('primary.0', '#008489')};
+    background-color: ${themeGet('primary.0', '#EE5A24')};
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -260,7 +260,7 @@ export const FormAction = styled.div`
       outline: 0;
       box-shadow: none;
       opacity: 0.9;
-      background-color: ${themeGet('primary.0', '#008489')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
     }
     &.back-btn {
       background-color: transparent;
@@ -269,7 +269,7 @@ export const FormAction = styled.div`
       padding: 0;
       &:hover,
       &:focus {
-        color: ${themeGet('primary.0', '#008489')};
+        color: ${themeGet('primary.0', '#EE5A24')};
       }
       svg {
         margin-right: 4px;

@@ -13,7 +13,7 @@ const PriceCardWrapper = styled.div`
 
     button {
       color: ${themeGet('color.1', '#ffffff')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
     }
   }
 `;
@@ -53,7 +53,7 @@ export const PricingList = styled.ul`
       margin-left: 15px;
     }
     .anticon-check-circle {
-      color: ${themeGet('primary.0', '#008489')};
+      color: ${themeGet('primary.0', '#EE5A24')};
     }
     .anticon-close-circle {
       color: ${themeGet('color.4', '#FC5C63')};

@@ -191,7 +191,7 @@ export const TitleArea = styled.div`
       margin: 4px 0 5px;
     }
     &:hover {
-      color: ${themeGet('primary.0', '#008489')};
+      color: ${themeGet('primary.0', '#EE5A24')};
     }
   }
 `;
@@ -225,7 +225,7 @@ text-overflow: ellipsis;
       margin: 4px 0 5px;
     }
     &:hover {
-      color: ${themeGet('color.1', '#008489')};
+      color: ${themeGet('color.1', '#EE5A24')};
     }
   }
 `;
@@ -263,11 +263,11 @@ export const RatingArea = styled.div`
   }
 
   i {
-    color: ${themeGet('primary.0', '#008489')};
+    color: ${themeGet('primary.0', '#EE5A24')};
   }
 
   svg {
-    fill: ${themeGet('primary.0', '#008489')};
+    fill: ${themeGet('primary.0', '#EE5A24')};
   }
 
   strong {
@@ -307,7 +307,7 @@ export const ButtonGroup = styled.div`
     justify-content: center;
     font-size: 9px;
     font-weight: 700;
-    color: ${themeGet('primary.0', '#008489')};
+    color: ${themeGet('primary.0', '#EE5A24')};
     transition: all 0.3s ease;
     &:hover,
     &:focus {

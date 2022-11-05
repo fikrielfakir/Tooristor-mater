@@ -54,10 +54,10 @@ export const AccountSidebar = styled.aside`
         &::after {
           left: 0;
           right: auto;
-          border-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
         }
         a {
-          color: ${themeGet('primary.0', '#008489')};
+          color: ${themeGet('primary.0', '#EE5A24')};
           font-weight: 700;
         }
       }
@@ -69,11 +69,11 @@ export const AccountSidebar = styled.aside`
           padding-bottom: 8px;
           border-bottom: 2px solid transparent;
           &.active {
-            border-bottom-color: ${themeGet('primary.0', '#008489')};
+            border-bottom-color: ${themeGet('primary.0', '#EE5A24')};
           }
         }
         &:hover {
-          color: ${themeGet('primary.0', '#008489')};
+          color: ${themeGet('primary.0', '#EE5A24')};
         }
       }
     }
@@ -179,8 +179,8 @@ export const FromWrapper = styled.div`
     > button[type='submit'] {
       border-radius: 3px;
       height: 47px;
-      border-color: ${themeGet('primary.0', '#008489')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      border-color: ${themeGet('primary.0', '#EE5A24')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
       font-size: 15px;
       font-weight: 700;
       text-transform: capitalize;
@@ -244,7 +244,7 @@ export const AgentPictureUploader = styled.div`
             margin: 5px 0 0;
             text-decoration: underline;
             background-color: transparent;
-            color: ${themeGet('primary.0', '#008489')};
+            color: ${themeGet('primary.0', '#EE5A24')};
           }
         }
       }

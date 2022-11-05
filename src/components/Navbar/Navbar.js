@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types';
+import Langue from "./../../container/Layout/Header/Langue"
+
+
 import NavbarWrapper, {
   Container,
   LogoArea,
@@ -30,6 +33,7 @@ const Navbar = ({
     addAllClasses.push(`is_${headerType}`);
   }
 
+
   return (
     <NavbarWrapper className={addAllClasses.join(' ')}>
       <Container>
@@ -41,7 +45,14 @@ const Navbar = ({
               : searchComponent}
           </LogoArea>
         ) : null}
+
+       
         <MenuArea>
+
+ {/* Chose langues */}
+   <Langue/>
+
+
           {navMenu && (
             <MenuWrapper className="main_menu">{navMenu}</MenuWrapper>
           )}
@@ -53,7 +64,9 @@ const Navbar = ({
             )
           )}
         </MenuArea>
+
       </Container>
+
     </NavbarWrapper>
   );
 };

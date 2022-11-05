@@ -37,7 +37,7 @@ export default class ImageUploader extends React.Component {
         <div className="image-drag-area">
           <FaCamera />
         </div>
-        <div className="ant-upload-text">Upload Photos</div>
+   
       </ImageUpload>
     );
     return (
@@ -50,7 +50,7 @@ export default class ImageUploader extends React.Component {
           onChange={this.handleChange}
           className="image_uploader"
         >
-          {fileList.length >= 4 ? null : uploadButton}
+          {fileList.length >= 2 ? null : uploadButton}
         </Dragger>
         <Modal
           visible={previewVisible}

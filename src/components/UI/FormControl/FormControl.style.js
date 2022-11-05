@@ -44,8 +44,8 @@ const Wrapper = styled.div`
       }
       &.ant-checkbox-checked {
         .ant-checkbox-inner {
-          border-color: ${themeGet('primary.0', '#008489')};
-          background-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
+          background-color: ${themeGet('primary.0', '#EE5A24')};
         }
       }
     }
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
   .ant-input-number-handler:hover {
     .ant-input-number-handler-up-inner,
     .ant-input-number-handler-down-inner {
-      color: ${themeGet('primary.0', '#008489')};
+      color: ${themeGet('primary.0', '#EE5A24')};
     }
   }
 
@@ -126,8 +126,8 @@ const Wrapper = styled.div`
 
   .ant-radio-group-solid {
     .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
-      border-color: ${themeGet('primary.0', '#008489')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      border-color: ${themeGet('primary.0', '#EE5A24')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
       &::before {
         content: none;
       }
@@ -140,7 +140,7 @@ const Wrapper = styled.div`
     }
     .ant-radio-button-wrapper {
       &:hover {
-        color: ${themeGet('primary.0', '#008489')};
+        color: ${themeGet('primary.0', '#EE5A24')};
       }
     }
   }
@@ -148,8 +148,8 @@ const Wrapper = styled.div`
   button[type='submit'] {
     border-radius: 3px;
     height: 47px;
-    border-color: ${themeGet('primary.0', '#008489')};
-    background-color: ${themeGet('primary.0', '#008489')};
+    border-color: ${themeGet('primary.0', '#EE5A24')};
+    background-color: ${themeGet('primary.0', '#EE5A24')};
     font-size: 15px;
     font-weight: 700;
     text-transform: capitalize;

@@ -10,7 +10,7 @@
     height: -webkit-max-content;
     height: max-content;
     padding: 40px;
-    width: 48%;
+    width: 100%;
     box-shadow: 0px 0px 30px rgb(53 59 72 / 5%);
     margin-top: 48px;
     justify-content: center;
@@ -44,9 +44,27 @@ display: flex;
     border: 1px solid rgba(53, 59, 72, 0.05);
     border-radius: 10px;
 }
+.leaflet-popup-content img{
+    height: 100%;
+    max-height: 75px;
+    min-height: 75px;
+    width: 100%;
+    margin: 4px 15px;
+    max-width: 80px;
+    background-size: cover;
+}
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
     display: flex !important;
     justify-content: center;
+    height: 100%;
+    max-height: 330px;
+    min-height: 330px;
+    max-width: 50rem;
+    min-width: 50rem;
+}
+.FullItem .gallery{
+    max-width: 55rem;
+    width: 100%;
 }
 .carousel-dark .carousel-indicators [data-bs-target] {
     background-color: #ffffff;
@@ -100,7 +118,7 @@ display: flex;
 }
 .detailItem{
     display: flex;
-    justify-content: center;   
+    justify-content: start;   
 }
 .titleItem .title{
     font-weight: 700;

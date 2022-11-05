@@ -2,14 +2,18 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'antd';
 import { AuthContext } from 'context/AuthProvider';
+import { useTranslation } from 'react-i18next';
 import {
+
   HOME_PAGE,
-  LISTING_POSTS_PAGE,
-  PRICING_PLAN_PAGE,
-  AGENT_ACCOUNT_SETTINGS_PAGE,
+  CONTACT_PAGE,
+  ABOUT_US,
+  PRIVACY_PAGE,
+  TERME_CONDITION,
 } from 'settings/constantClient';
 
 const MobileMenu = ({ className }) => {
+  const {t} = useTranslation();
   // auth context
   const { loggedIn, logOut } = useContext(AuthContext);
 
@@ -17,25 +21,21 @@ const MobileMenu = ({ className }) => {
     <Menu className={className}>
       <Menu.Item key="0">
         <NavLink exact to={HOME_PAGE}>
-          Hotels
+        {t("Home")}
         </NavLink>
       </Menu.Item>
       <Menu.Item key="1">
-        <NavLink to={LISTING_POSTS_PAGE}>Listing</NavLink>
+        <NavLink to={ABOUT_US}>{t("About_us")}</NavLink>
       </Menu.Item>
       <Menu.Item key="2">
-        <NavLink to={PRICING_PLAN_PAGE}>Pricing</NavLink>
+        <NavLink to={CONTACT_PAGE}>{t("Contact_us")}</NavLink>
       </Menu.Item>
-      {loggedIn && (
-        <Menu.Item key="3">
-          <NavLink to={AGENT_ACCOUNT_SETTINGS_PAGE}>Account Settings</NavLink>
-        </Menu.Item>
-      )}
-      {loggedIn && (
-        <Menu.Item key="4">
-          <button onClick={logOut}>Log Out</button>
-        </Menu.Item>
-      )}
+      <Menu.Item key="3">
+        <NavLink to={PRIVACY_PAGE}>{t("Privacy_Policy")}</NavLink>
+      </Menu.Item>
+      <Menu.Item key="3">
+        <NavLink to={TERME_CONDITION}>{t("Terms_Conditions")}</NavLink>
+      </Menu.Item>
     </Menu>
   );
 };

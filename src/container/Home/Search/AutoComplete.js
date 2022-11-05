@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next'
 import "./search.css"
 
-const AutoComplete = ({ suggestions }) => {
+
+const AutoComplete = ({ suggestions,prod}) => {
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(0);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [input, setInput] = useState("");
+  const { t, i18n } = useTranslation();
 
   const onChange = (e) => {
     const userInput = e.target.value;
@@ -15,18 +18,20 @@ const AutoComplete = ({ suggestions }) => {
       (suggestion) =>
         suggestion.toLowerCase().indexOf(userInput.toLowerCase()) > -1
     );
-
+   
     setInput(e.target.value);
     setFilteredSuggestions(unLinked);
     setActiveSuggestionIndex(0);
     setShowSuggestions(true);
+    
   };
-
   const onClick = (e) => {
     setFilteredSuggestions([]);
     setInput(e.target.innerText);
+    prod(e.target.innerText);
     setActiveSuggestionIndex(0);
     setShowSuggestions(false);
+
   };
 
   const onKeyDown = (e) => {
@@ -55,6 +60,7 @@ const AutoComplete = ({ suggestions }) => {
   };
 
   const SuggestionsListComponent = () => {
+  
     return filteredSuggestions.length ? (
       <ul class="suggestions">
         {filteredSuggestions.map((suggestion, index) => {
@@ -64,7 +70,6 @@ const AutoComplete = ({ suggestions }) => {
           if (index === activeSuggestionIndex) {
             className = "suggestion-active";
           }
-
           return (
             <li className={className} key={suggestion} onClick={onClick}>
               {suggestion}
@@ -74,10 +79,7 @@ const AutoComplete = ({ suggestions }) => {
       </ul>
     ) : (
       <div class="no-suggestions">
-        <span role="img" aria-label="tear emoji">
-          😪
-        </span>{" "}
-        <em>sorry no suggestions</em>
+        <em>{t("no_suggestion")}</em>
       </div>
     );
   };
@@ -88,7 +90,7 @@ const AutoComplete = ({ suggestions }) => {
       <input
         type="text"
         onChange={onChange}
-        placeholder="Search"
+        placeholder={t("search")}
         onKeyDown={onKeyDown}
         value={input}
       />

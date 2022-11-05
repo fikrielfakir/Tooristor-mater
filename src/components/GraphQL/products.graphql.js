@@ -29,6 +29,17 @@ query Products(
       sku
       slug
       name
+      city
+      shop_id
+      categories {
+        id
+        name
+      }
+      tags {
+        id
+        name
+      }
+      created_at
       description
       image {
         id
@@ -40,16 +51,55 @@ query Products(
         name
       }
       shop {
+        id
+        status
+         address {
+        city
+      }
         name
+        logo{
+          id
+          thumbnail
+          original
+        }
+        workhours {
+        monday {
+          From
+          To
+        }
+        tuesday {
+          From
+          To
+        }
+        wednesday {
+          From
+          To
+        }
+        thursday {
+          From
+          To
+        }
+        friday {
+          From
+          To
+        }
+        saturday {
+          From
+          To
+        }
+        sunday {
+          From
+          To
+        }
+      }
       }
       price
-      categories {
-        id
-        name}
       min_price
       max_price
       quantity
+      
       product_type
+      in_stock
       unit
       gallery {
         id
@@ -72,6 +122,48 @@ query Product($id_product: ID, $slug: String) {
     shop_id
     slug
     name
+    shop {
+        id
+        status
+        name
+        description
+        logo{
+          id
+          thumbnail
+          original
+        }
+        workhours {
+        monday {
+          From
+          To
+        }
+        tuesday {
+          From
+          To
+        }
+        wednesday {
+          From
+          To
+        }
+        thursday {
+          From
+          To
+        }
+        friday {
+          From
+          To
+        }
+        saturday {
+          From
+          To
+        }
+        sunday {
+          From
+          To
+        }
+      }
+      }
+    city
     description
     image {
       id

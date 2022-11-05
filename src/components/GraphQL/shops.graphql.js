@@ -33,8 +33,8 @@ query Shops(
 `;
 export const GET_SHOP = gql `
  ${ SHOP_PARTS }
-query Shop($id: ID, $slug: String) {
-  shop(id: $id, slug: $slug) {
+query Shop($id_shop: ID, $slug: String) {
+  shop(id: $id_shop, slug: $slug) {
     ...ShopParts
     settings {
       socials {
@@ -168,12 +168,84 @@ export const CREATE_SHOP = gql `
 mutation CreateShop($input: ShopInput!) {
   createShop(input: $input) {
     id
+    owner_id
+    staffs {
+      id
+      name
+      lastname
+      cin
+      email
+      phone
+      shops {
+        id
+      }
+    }
     name
+    slug
+    status
     description
+    cover_image {
+      id
+      thumbnail
+      original
+    }
     logo {
       id
       original
       thumbnail
+    }
+    address {
+      street_address
+      city
+      state
+      zip
+    }
+    settings {
+      website
+      location {
+        lat
+        lng
+        city
+        state
+        country
+        zip
+        formattedAddress
+      }
+      contact
+      socials {
+        url
+        icon
+      }
+    }
+    workhours {
+      monday {
+        From
+        To
+      }
+      tuesday {
+        From
+        To
+      }
+      wednesday {
+        From
+        To
+      }
+      thursday {
+        From
+        To
+      }
+      friday {
+        From
+        To
+      }
+      saturday {
+        From
+        To
+      }
+      sunday {
+        From
+        To
+      }
     }
   }
 }
@@ -217,8 +289,8 @@ mutation ApproveShop($input: ApproveShopInput) {
 }`;
 export const DISPROVE_SHOP = gql `
  ${ SHOP_PARTS }
-mutation DisApproveShop($id: ID!) {
-  disApproveShop(id: $id) {
+mutation DisApproveShop($disApproveShopId: ID!) {
+  disApproveShop(id: $disApproveShopId) {
     ...ShopParts
   }
 }`;

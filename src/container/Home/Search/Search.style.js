@@ -78,17 +78,19 @@ width: 100%;
 padding: 28px 30px 30px;
 border-radius: 6px;
 position: absolute;
-bottom: 145px;
+bottom: 0px;
+height:100%;
 display: flex;
 z-index: 1;
 gap: 0px;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 
   @media (min-width: 569px) and (max-width: 991px) {
-    width: 414px;
-    left: 30px;
+    width: 100%;
+    left: 0px;
+    padding: 0px;
   }
 
   @media (max-width: 480px) {
@@ -103,7 +105,7 @@ justify-content: space-between;
 
   > div {
     @media (min-width: 481px) {
-      margin-top: 30px;
+      margin-top: 0px;
     }
   }
 
@@ -133,7 +135,7 @@ export const FormWrapper = styled.div`
     min-width: 157px;
     height: 60px;
     color: ${themeGet('color.1', '#ffffff')};
-    background-color: ${themeGet('primary.0', '#008489')};
+    background-color: ${themeGet('primary.0', '#EE5A24')};
     border-radius: 0 3px 3px 0;
     border: 0;
     box-shadow: none;
@@ -451,7 +453,7 @@ export const ComponentWrapper = styled.div`
     &.user-friends {
       left: 15px;
       right: auto;
-      fill: ${themeGet('primary.0', '#008489')};
+      fill: ${themeGet('primary.0', '#EE5A24')};
     }
 
     &.calendar {
@@ -519,5 +521,4 @@ export const ItemWrapper = styled.div`
     }
   }
 `;
-
 export default BannerWrapper;

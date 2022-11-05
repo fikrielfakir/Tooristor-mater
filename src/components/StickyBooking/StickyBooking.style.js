@@ -53,11 +53,11 @@ export const HotelRating = styled.div`
   margin-top: 1px;
 
   i {
-    color: ${themeGet('primary.0', '#008489')};
+    color: ${themeGet('primary.0', '#EE5A24')};
   }
 
   svg {
-    fill: ${themeGet('primary.0', '#008489')};
+    fill: ${themeGet('primary.0', '#EE5A24')};
   }
 
   strong {
@@ -117,7 +117,7 @@ export const ActionBtn = styled.div`
     text-shadow: none;
     text-transform: uppercase;
     color: ${themeGet('color.1', '#ffffff')};
-    background-color: ${themeGet('primary.0', '#008489')};
+    background-color: ${themeGet('primary.0', '#EE5A24')};
     transition: all 0.3s ease;
 
     @media (max-width: 375px) {

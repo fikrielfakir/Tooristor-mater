@@ -49,21 +49,63 @@ border-right: 1px solid rgba(53, 59, 72, 0.2);
 .aside-logo{
     width:120px;
 }
-.listCard {
-    margin: 5px 15px;
+.fad.fa-expand-arrows{
+    font-size: 24px;
+    font-weight: 500;
+}
+.fad.fa-compress-arrows-alt{
+    font-size: 24px;
+    font-weight: 500;
+}
+.contentOverview{
+    width: 100%;
+    margin-top: 4rem;
     display: flex;
+    flex-direction: column;
+}
+
+.listCard {
+    display: flex;
+    padding: 0px 10px;
+    margin: 10px 0px;
     width: 100%;
     grid-gap: 25px;
     gap: 25px;
     height: 100%;
-    max-height: 120px;
+    max-height: 106px;
+    justify-content: flex-start;
+}
+.Onlyheader .fasfa-expand{
+    font-size: 24px !important;
+}
+
+.Onlyheader .fas.fa-bars{
+    font-size: 24px !important;
+}
+.Onlyheader{
+    width: 100%;
+    padding: 5px 45px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameView{
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.8;
 }
 .CardOverView{
     width: 100%;
-    max-width: 195px;
-    max-height: 100px;
+    max-width: 197.5px;
+    max-height: 130px;
     height: 100%;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .Status{
     display: flex;
@@ -77,6 +119,9 @@ border-right: 1px solid rgba(53, 59, 72, 0.2);
 .Status i{
     font-size: 25px !important;
 }
+.ProductItemOwner{
+    margin: 10px 0px !important;
+}
 .BarreItem{
     border: 2px solid rgba(53, 59, 72, 0.1);
     border-radius: 10px;
@@ -89,13 +134,16 @@ border-right: 1px solid rgba(53, 59, 72, 0.2);
     padding: 10px;
     grid-gap: 15px;
     max-width: 200px;
-    min-width: 410px;
+    min-width: 100%;
     width: 100%;
     margin-bottom: 15px;
     grid-gap: 15px;
     grid-gap: 15px;
     gap: 15px;
     justify-content: flex-start;
+}
+.shop .FeedList{
+    max-width: 100% !important;
 }
 .FeedList{
     max-width: 413px;
@@ -148,30 +196,32 @@ border-right: 1px solid rgba(53, 59, 72, 0.2);
 .ListProduct li{
     padding: 10px;
 }
-tbody tr td:nth-child(1){
+/* tbody tr td:nth-child(1){
     border: 2px solid ;
     border-right:none !important ;
     border-radius: 10px 0px 0px 10px;
-}
+} */
 tbody tr td:nth-child(2){
     border-top: 2px solid ;
-    border-bottom:1px solid ;
+    border-bottom:2px solid ;
+    width: 135px;
 }
 tbody tr td:nth-child(3){
     border-top: 2px solid ;
-    border-bottom:1px solid ;
+    border-bottom:2px solid ;
 }
 tbody tr td:nth-child(4){
     border-top: 2px solid ;
-    border-bottom:1px solid ;
+    border-bottom:2px solid ;
+    width: 115px;
 }
 tbody tr td:nth-child(5){
     border-top: 2px solid ;
-    border-bottom:1px solid ;
+    border-bottom:2px solid ;
 }
 tbody tr td:nth-child(6){
     border-top: 2px solid ;
-    border-bottom:1px solid ;
+    border-bottom:2px solid ;
 }
 tbody tr td:nth-child(7){
     border: 2px solid ;
@@ -179,8 +229,9 @@ tbody tr td:nth-child(7){
     border-radius: 0px 10px 10px 0px;
 }
 tbody tr td{
-    text-align: start;
-    padding-left:15px ;
+    text-align: center;
+    padding-left:10px ;
+    padding-right:10px ;
     border-color: rgba(53, 59, 72, 0.1) !important;
 }
 table {
@@ -265,7 +316,7 @@ th{
 .validationbutton{
     width: 100%;
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
     grid-gap: 10px;
     gap: 10px;
     align-items: center;

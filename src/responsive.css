@@ -1,0 +1,419 @@
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {}
+
+ /* // Medium devices (tablets, 768px and up) */
+ @media only screen and (max-width: 991px) and (min-width: 768px) {
+     .rs-drawer-left.rs-drawer-xs {
+         width: 100% !important;
+         max-width: 360px !important;
+         min-width: 280px !important;
+     }
+ }
+
+ @media (max-width: 565px) {
+
+
+     .rs-drawer-left.rs-drawer-xs {
+         width: 100% !important;
+         max-width: 200px !important;
+         min-width: 160px !important;
+     }
+ }
+
+ @media only screen and (max-width: 768px) and (min-width: 565px) {
+     .rs-drawer-left.rs-drawer-xs {
+         width: 100% !important;
+         max-width: 300px !important;
+         min-width: 260px !important;
+     }
+ }
+
+ /* // Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {}
+
+ /* // Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {}
+
+
+ @media only screen and (max-width: 565px) and (min-width: 360px) {
+    .contactForm .MuiBox-root{
+        min-width: 200px !important;
+    }
+     .InputForm .w50 {
+         max-width: 140px;
+         min-width: 140px;
+     }
+
+     .contactForm {
+         width: 100%;
+         max-width: 300px;
+         margin-bottom: 15px;
+     }
+
+     .inputAuth svg {
+         left: 15px;
+     }
+
+     .FormWrapper {
+         max-width: 325px;
+         min-width: 340px;
+     }
+
+     .InputLine {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .FromContact {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         max-width: 350px;
+         min-width: 340px;
+         width: 100%;
+         flex-direction: column;
+     }
+
+     .FormWrapper p {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+     }
+
+     .CardOverView {
+         width: 100% !important;
+         max-width: 165px !important;
+         min-width: 100px !important;
+     }
+ }
+
+ @media only screen and (max-width: 665px) and (min-width: 360px) {
+     .bodyFrom {
+         justify-content: center;
+     }
+
+     .logoWrapper {
+         display: none;
+     }
+
+     .view-static {
+         width: 100%;
+         min-height: 280px;
+         height: 100%;
+         max-height: 300px;
+     }
+
+     .listCard {
+         display: flex;
+         padding: 0px !important;
+         margin: 10px 0px;
+         max-width: 700px;
+         width: 100%;
+         grid-gap: 25px;
+         gap: 15px !important;
+         min-height: 225px;
+         height: 100%;
+         flex-wrap: wrap;
+         max-height: 106px;
+         justify-content: center !important;
+     }
+
+     .ContentView {
+         margin: 10px 15px;
+         display: flex;
+         gap: 35px;
+         flex-direction: column;
+     }
+ }
+
+ @media only screen and (max-width: 991px) and (min-width: 565px) {
+     .InputLine {
+         display: flex;
+         width: 100%;
+         gap: 10px;
+     }
+
+     .FromContact {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         max-width: 700px;
+         min-width: 500px;
+         width: 100%;
+         flex-direction: column;
+     }
+
+     .CardOverView {
+         width: 100%;
+         max-width: 265.5px !important;
+         max-height: 130px;
+         height: 100%;
+         border-radius: 10px;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+     }
+ }
+
+
+ @media only screen and (max-width: 991px) and (min-width: 360px) {
+
+     .rs-drawer-left.rs-drawer-md,
+     .rs-drawer-right.rs-drawer-md {
+         width: 360px !important;
+     }
+
+     .Onlyheader {
+         padding: 5px 20px !important;
+     }
+
+     .rs-drawer-body {
+
+         padding: 72px 10px !important;
+
+     }
+
+     .rs-drawer-body .aside.aside-default .aside-logo {
+         display: block;
+     }
+
+     .rs-drawer-body .aside.aside-default {
+         display: block;
+         padding: 0 20px;
+     }
+
+     .chztxo.transparent .hamburg-btn>span {
+         background-color: rgba(53, 59, 72, 0.3) !important;
+     }
+
+     .ant-layout-content {
+         padding: 5px;
+     }
+
+     .Empty img {
+         max-width: 32% !important;
+     }
+
+     .Mobile .Searchbox {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         grid-column-gap: 11px;
+         grid-row-gap: 7px;
+         padding: 10px;
+         width: 100%;
+         margin-bottom: 45px;
+     }
+
+     #footer ul {
+         display: none;
+     }
+
+     .FullItem {
+         align-items: center !important;
+         padding: 0px 10px;
+     }
+
+     .cart {
+         width: 340px !important;
+         height: 340px !important;
+         min-height: 300px !important;
+     }
+
+     .FullItem .gallery {
+         max-width: 330px;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }
+
+     .carousel-item-next,
+     .carousel-item-prev,
+     .carousel-item.active {
+         display: flex !important;
+         justify-content: center;
+         height: 100%;
+         max-height: 330px;
+         min-height: 330px;
+         max-width: 300px !important;
+         min-width: 250px !important;
+     }
+
+     .item-product {
+         width: max-content !important;
+         max-width: 100% !important;
+         max-height: 265px !important;
+         min-height: 300px;
+     }
+
+     .carousel {
+         padding-bottom: 40px !important;
+         display: flex;
+         max-height: max-content !important;
+         height: max-content !important;
+         max-width: max-content !important;
+         padding: 20px;
+         box-shadow: 0px 0px 30px rgb(53 59 72 / 5%);
+         margin-top: 45px;
+         justify-content: center;
+     }
+ }
+
+ @media (max-width:600px) {}
+
+ @media (max-width:454.98px) {
+     .shop .BarreItem {
+         max-width: 403px !important;
+         min-width: 328px !important;
+     }
+ }
+
+ @media (min-width: 991.98px) {
+     .contentOverview {
+         margin-left: 70px;
+     }
+ }
+
+ @media (max-width: 575.98px) {}
+
+ @media (max-width: 360px) {
+
+     .FullItem .gallery {
+         max-width: 325px;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .filtreItem {
+         max-width: 120px !important;
+         min-width: 100px !important;
+     }
+
+     .title-prix {
+         height: 50px;
+     }
+
+     .fullFeed {
+         margin-left: 10px !important;
+     }
+
+     .list_card {
+         grid-column-gap: 15px !important;
+         grid-row-gap: 25px !important;
+         display: flex;
+         margin-top: 20px !important;
+         flex-direction: row !important;
+         flex-wrap: wrap !important;
+         justify-content: center;
+     }
+
+     .card {
+        max-width: 170px !important;
+        min-width: 165px !important;
+     }
+
+     .item-product {
+         max-width: 200px !important;
+         max-height: 218px !important;
+     }
+
+     .reltedlist {
+         gap: 10px !important;
+     }
+
+ }
+
+
+ /* // Small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) {}
+
+ /* // Medium devices (tablets, less than 992px) */
+ @media (max-width: 991px) {
+     .suggestions {
+         z-index: 9999;
+     }
+
+     .ListingOnly {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .fullFeed {
+         margin-top: 20px;
+     }
+
+     .headNav {
+         display: none;
+     }
+
+     .Searchbox {
+         display: flex;
+         flex-direction: column;
+         margin: 0;
+
+     }
+
+     .Searchbox .css-tckzmm,
+     .css-gcwvw8-MuiAutocomplete-root {
+         width: 100% !important;
+         max-width: 991px;
+         height: 58px;
+         min-width: 100px;
+     }
+
+     .css-gcwvw8-MuiAutocomplete-root .MuiOutlinedInput-root {
+         padding: 13.5px !important;
+     }
+
+     .search {
+         width: 100%;
+         max-width: 991px;
+         min-width: 100px;
+     }
+
+     .FiltreTool {
+         padding: 10px;
+         width: 100%;
+         display: flex;
+         margin-top: 0px;
+         height: 60px;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+     }
+
+     .nametool {
+         display: flex;
+         margin: 0;
+         margin-left: 0px;
+         grid-gap: 10px;
+         font-weight: 600;
+         gap: 5px;
+         justify-content: flex-start;
+         align-items: center;
+     }
+
+     .filtreItem {
+         width: 100%;
+         font-size: 12px;
+         padding: 6px;
+         margin: 6px;
+         max-width: 300px;
+         min-width: 174px;
+         height: 42px;
+         border-radius: 10px;
+     }
+
+     .ant-layout-content .sc-dIouRR.gGjnLl {
+         display: flex;
+         flex-direction: column;
+     }
+ }
+
+
+ /* // Large devices (desktops, less than 1200px) */
+ @media (max-width: 1199.98px) {}

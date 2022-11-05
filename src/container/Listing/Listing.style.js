@@ -4,7 +4,7 @@ import { themeGet } from '@styled-system/theme-get';
 const ListingWrapper = styled.div`
   position: relative;
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   /* checkbox group component style */
   .ant-checkbox-group {
@@ -15,8 +15,8 @@ const ListingWrapper = styled.div`
         }
         &.ant-checkbox-checked {
           .ant-checkbox-inner {
-            border-color: ${themeGet('primary.0', '#008489')};
-            background-color: ${themeGet('primary.0', '#008489')};
+            border-color: ${themeGet('primary.0', '#EE5A24')};
+            background-color: ${themeGet('primary.0', '#EE5A24')};
           }
           &::after {
             display: none;
@@ -30,7 +30,7 @@ const ListingWrapper = styled.div`
       &:hover {
         .ant-checkbox {
           .ant-checkbox-inner {
-            border-color: ${themeGet('primary.0', '#008489')};
+            border-color: ${themeGet('primary.0', '#EE5A24')};
           }
         }
       }
@@ -61,7 +61,7 @@ const ListingWrapper = styled.div`
       background-color: ${themeGet('color.13', '#E2E2E2')};
     }
     .ant-slider-track {
-      background-color: ${themeGet('primary.0', '#008489')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
     }
     .ant-slider-step {
       .ant-slider-dot {
@@ -74,23 +74,23 @@ const ListingWrapper = styled.div`
           margin-left: -1px;
         }
         &.ant-slider-dot-active {
-          border-color: ${themeGet('primary.0', '#008489')};
+          border-color: ${themeGet('primary.0', '#EE5A24')};
         }
       }
     }
     &:hover {
       .ant-slider-track {
-        background-color: ${themeGet('primary.0', '#008489')};
+        background-color: ${themeGet('primary.0', '#EE5A24')};
       }
       .ant-slider-handle:not(.ant-tooltip-open) {
-        border-color: ${themeGet('primary.0', '#008489')};
+        border-color: ${themeGet('primary.0', '#EE5A24')};
       }
     }
     .ant-slider-handle {
       margin-top: -8px;
       width: 20px;
       height: 20px;
-      border: 6px solid ${themeGet('primary.0', '#008489')};
+      border: 6px solid ${themeGet('primary.0', '#EE5A24')};
       box-shadow: 0 2px 2px ${themeGet('color.5', 'rgba(0, 0, 0, 0.25)')};
       &:focus {
         box-shadow: none;
@@ -130,8 +130,8 @@ const ListingWrapper = styled.div`
       font-weight: 700;
       border-radius: 3px;
       color: ${themeGet('color.1', '#ffffff')};
-      border-color: ${themeGet('primary.0', '#008489')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      border-color: ${themeGet('primary.0', '#EE5A24')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
       transition: all 0.3s ease;
       &:hover {
         outline: none;
@@ -172,8 +172,8 @@ export const ShowMapCheckbox = styled.div`
   .ant-checkbox-wrapper {
     .ant-checkbox-checked {
       .ant-checkbox-inner {
-        border-color: ${themeGet('primary.0', '#008489')};
-        background-color: ${themeGet('primary.0', '#008489')};
+        border-color: ${themeGet('primary.0', '#EE5A24')};
+        background-color: ${themeGet('primary.0', '#EE5A24')};
         &::after {
           transform: rotate(45deg) scale(1) translate(-50%, -70%);
         }
@@ -184,7 +184,7 @@ export const ShowMapCheckbox = styled.div`
   .ant-checkbox-wrapper:hover .ant-checkbox-inner,
   .ant-checkbox:hover .ant-checkbox-inner,
   .ant-checkbox-input:focus + .ant-checkbox-inner {
-    border-color: ${themeGet('primary.0', '#008489')};
+    border-color: ${themeGet('primary.0', '#EE5A24')};
   }
 `;
 
@@ -256,8 +256,8 @@ export const FilterArea = styled.div`
 
     &.active {
       color: ${themeGet('color.1', '#ffffff')};
-      border-color: ${themeGet('primary.0', '#008489')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      border-color: ${themeGet('primary.0', '#EE5A24')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
     }
   }
 `;
@@ -279,8 +279,8 @@ export const ButtonGroup = styled.div`
     border: 1px solid ${themeGet('border.3', '#E6E6E6')};
     &.ant-btn-primary {
       color: ${themeGet('color.1', '#ffffff')};
-      border-color: ${themeGet('primary.0', '#008489')};
-      background-color: ${themeGet('primary.0', '#008489')};
+      border-color: ${themeGet('primary.0', '#EE5A24')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
       margin-left: 10px;
     }
     &::after {

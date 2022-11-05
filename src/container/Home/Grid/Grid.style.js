@@ -22,14 +22,14 @@ export const LoadMoreWrapper = styled.div`
     border-radius: 3px;
     border: 0;
     box-shadow: none;
-    background-color: ${themeGet('primary.0', '#008489')};
+    background-color: ${themeGet('primary.0', '#EE5A24')};
     transition: all 0.3s ease;
     &:hover,
     &:focus {
       outline: 0;
       text-decoration: none;
       box-shadow: none;
-      background-color: ${themeGet('primary.0', '#008489')};
+      background-color: ${themeGet('primary.0', '#EE5A24')};
       opacity: 0.88;
     }
   }

@@ -13,6 +13,7 @@ import {
   SINGLE_POST_PAGE,
   AGENT_PROFILE_PAGE,
   DETAIL_POSTS_PAGE,
+  DETAIL_POSTS_PAGE_SHOP,
   AGENT_ACCOUNT_SETTINGS_PAGE,
   PRIVACY_PAGE,
   PRICING_PLAN_PAGE,
@@ -46,6 +47,15 @@ const routes = [
         import(/* webpackChunkName: "DEtAIL" */ '../container/Listing/Products/ProductsDetail'),
       loading: Loading,
       modules: ['DetailPost'],
+    }),
+  },
+  {
+    path: DETAIL_POSTS_PAGE_SHOP,
+    component: Loadable({
+      loader: () =>
+        import(/* webpackChunkName: "DEtAIL" */ '../container/Listing/shop/ShopDetail'),
+      loading: Loading,
+      modules: ['DetailPostShop'],
     }),
   },
   {

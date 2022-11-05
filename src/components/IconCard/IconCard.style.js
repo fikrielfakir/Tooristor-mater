@@ -17,7 +17,7 @@ export const IconWrapper = styled.div`
   svg {
     width: 80px;
     height: auto;
-    fill: ${themeGet('primary.0', '#008489')};
+    fill: ${themeGet('primary.0', '#EE5A24')};
 
     @media (max-width: 767px) {
       width: 50px;

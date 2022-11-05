@@ -27,6 +27,8 @@ ADD_PROJECTS_ADMIN,
 PRODUCTS_ADMIN,
 ADD_PRODUCTS_ADMIN,
 CATEGORY_ADMIN,
+OFFRES_ADMIN,
+TAGES_ADMIN,
 ADD_CATEGORY_ADMIN,
 MESSAGES_ADMIN,
 SETTINGS_ADMIN,
@@ -58,6 +60,8 @@ export default withRouter(function Layout({ children, location }) {
          location.pathname === PRODUCTS_ADMIN ||
          location.pathname === ADD_PRODUCTS_ADMIN ||
          location.pathname === CATEGORY_ADMIN ||
+         location.pathname === OFFRES_ADMIN ||
+         location.pathname === TAGES_ADMIN ||
          location.pathname === ADD_CATEGORY_ADMIN ||
          location.pathname === MESSAGES_ADMIN ||
          location.pathname === SETTINGS_ADMIN ||

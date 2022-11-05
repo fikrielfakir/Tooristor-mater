@@ -31,7 +31,7 @@ const SectionTitleWrapper = styled.div`
     }
 
     &:hover {
-      color: ${themeGet('primary.0', '#008489')};
+      color: ${themeGet('primary.0', '#EE5A24')};
     }
   }
 `;
