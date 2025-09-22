@@ -21,8 +21,8 @@ import {
   ApolloLink,
   ApolloProvider,
 } from "@apollo/client";
-// Backend URL - Update this when backend is available
-const URL = `https://${process.env.REPLIT_DEV_DOMAIN || 'localhost'}/pickbazar-laravel/api/public/graphql`;
+// Backend URL - Now connecting to our local GraphQL backend
+const URL = `http://localhost:3000/graphql`;
 import createUploadLink from "apollo-upload-client/public/createUploadLink.js";
 const httpLink = createUploadLink({
   uri: URL,
