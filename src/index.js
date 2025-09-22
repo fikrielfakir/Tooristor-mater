@@ -21,8 +21,11 @@ import {
   ApolloLink,
   ApolloProvider,
 } from "@apollo/client";
-// Backend URL - Now connecting to our local GraphQL backend
-const URL = `http://localhost:3000/graphql`;
+// Backend URL - Now connecting to our local GraphQL backend  
+const backendDomain = process.env.REPLIT_DEV_DOMAIN;
+const URL = backendDomain 
+  ? `https://${backendDomain.replace('-00-', '-01-')}/graphql`
+  : `http://localhost:3000/graphql`;
 import createUploadLink from "apollo-upload-client/public/createUploadLink.js";
 const httpLink = createUploadLink({
   uri: URL,
